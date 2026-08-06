@@ -29,4 +29,10 @@ Theres so much more, but the basics behind the death counter, points system, wif
 I gotta add more now, maybe some more color, some more code to finalize it cus rn it not looking that good. 
 
 <img width="909" height="903" alt="image" src="https://github.com/user-attachments/assets/aaec75be-b972-4fdd-a9d8-a1af777b2300" />
+
+
+
+## The game designs are a bit rough lets fix it. (Hour 1) - 8/5/2026
+
+The game design has no color, so its time to upgrade a little bit. 
 <img width="1280" height="811" alt="image" src="https://github.com/user-attachments/assets/edef8964-bcdb-40d7-ae3e-1d9648c1da4d" />
