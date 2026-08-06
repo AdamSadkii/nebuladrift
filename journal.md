@@ -31,8 +31,17 @@ I gotta add more now, maybe some more color, some more code to finalize it cus r
 <img width="909" height="903" alt="image" src="https://github.com/user-attachments/assets/aaec75be-b972-4fdd-a9d8-a1af777b2300" />
 
 
-
 ## The game designs are a bit rough lets fix it. (Hour 1) - 8/5/2026
 
 The game design has no color, so its time to upgrade a little bit. 
 <img width="1280" height="811" alt="image" src="https://github.com/user-attachments/assets/edef8964-bcdb-40d7-ae3e-1d9648c1da4d" />
+
+## The game over sign is complete I think with the color. (hours 2-4)
+<img width="1916" height="851" alt="image" src="https://github.com/user-attachments/assets/2465939b-8383-4faf-966b-9bab1e44deba" />
+
+## The game is done. (hours 4-7)
+<img width="1890" height="874" alt="image" src="https://github.com/user-attachments/assets/5b6cc278-bf5c-4b5c-a506-30c170b4d9c9" />
+<img width="1140" height="916" alt="image" src="https://github.com/user-attachments/assets/4c40481c-a5b0-4160-b996-bf7c954b7393" />
+
+
+
