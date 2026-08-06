@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -11,8 +11,11 @@
   <canvas id="game"></canvas>
 
   <div id="hud">
-    <div id="top-right">
+    <div id="top-left">
       <button id="mute-btn" class="icon-btn" type="button" title="Unmute" aria-label="Toggle sound">SFX</button>
+      <button id="skin-btn" class="icon-btn" type="button" title="Change skin">CLASSIC</button>
+      <span id="theme-label" class="chip">day</span>
+      <span id="ach-count" class="chip">0/12 ach</span>
     </div>
 
     <div id="score-panel">
@@ -21,7 +24,16 @@
       <span id="mult-value"></span>
     </div>
 
-    <div id="hint" class="hidden">Hold to thrust</div>
+    <div id="legend">
+      <span class="lg coin">coin</span>
+      <span class="lg rainbow">rainbow</span>
+      <span class="lg shield">shield</span>
+      <span class="lg slow">slow</span>
+      <span class="lg mag">mag</span>
+      <span class="lg wind">wind/drop</span>
+    </div>
+
+    <div id="hint" class="hidden">Hold to thrust Â· P pause Â· [ ] skin</div>
     <div id="toast" role="status"></div>
   </div>
 
@@ -29,17 +41,28 @@
     <div id="overlay-card">
       <div id="title-screen">
         <h1>Nebula Drift</h1>
-        <p class="subtitle">no wifi? still drift.</p>
+        <p class="subtitle">hold up Â· dodge stuff Â· grab shiny things</p>
+        <p id="stats-line" class="stats-line">0 runs · 0 coins lifetime</p>
+        <ul class="feature-list">
+          <li><i class="swatch cactus"></i> cactus / rocks / birds / boss</li>
+          <li><i class="swatch coin"></i> coins â†’ multiplier â†’ FEVER</li>
+          <li><i class="swatch rainbow"></i> rainbow coin = jackpot</li>
+          <li><i class="swatch shield"></i> blue shield Â· purple slow Â· pink mag</li>
+          <li><i class="swatch wind"></i> wind lifts Â· red zones drop you</li>
+          <li><i class="swatch fever"></i> skins unlock from achievements</li>
+        </ul>
         <button id="play-btn" class="btn" type="button">Start</button>
-        <p class="play-hint">Space / click / hold</p>
+        <p class="play-hint">Space / click / hold Â· P pause Â· [ ] skins</p>
       </div>
       <div id="gameover-screen" hidden>
         <h1>Game Over</h1>
+        <p id="new-best" class="subtitle new-best" hidden>new high score!</p>
         <p class="subtitle">hit something</p>
         <div id="final-score">0</div>
         <div id="best-score">HI 0</div>
         <div id="run-stats"></div>
         <div class="btn-row">
+          <button id="revive-btn" class="btn fever" type="button" hidden>Revive once</button>
           <button id="retry-btn" class="btn" type="button">Retry</button>
           <button id="share-btn" class="btn secondary" type="button">Copy</button>
         </div>
@@ -50,3 +73,4 @@
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
+

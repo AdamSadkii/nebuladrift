@@ -1,4 +1,4 @@
-/** Tunables for Classic Drift */
+﻿/** Tunables for Classic Drift */
 export const CONFIG = {
   HS_KEY: "nebula-drift-highscore",
   MUTE_KEY: "nebula-drift-muted",
@@ -40,9 +40,10 @@ export const CONFIG = {
 
   CLOUD_COUNT: 6,
   GROUND_SEGMENTS: 24,
-  HILL_COUNT: 5,;
+  HILL_COUNT: 5,
+};
 
-/** Flat 2D palette — colorful but not neon-glow */
+/** Flat 2D palette - colorful but not neon-glow */
 export const COLORS = {
   bg: "#eaf6ff",
   ink: "#3d3d3d",
