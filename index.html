@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Nebula Drift</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div id="top-right">
+      <button id="mute-btn" class="icon-btn" type="button" title="Unmute" aria-label="Toggle sound">SFX</button>
+    </div>
+
+    <div id="score-panel">
+      <span class="label">HI <span id="hi-inline">0</span></span>
+      <span id="score-value">0</span>
+      <span id="mult-value"></span>
+    </div>
+
+    <div id="hint" class="hidden">Hold to thrust</div>
+    <div id="toast" role="status"></div>
+  </div>
+
+  <div id="overlay" class="visible">
+    <div id="overlay-card">
+      <div id="title-screen">
+        <h1>Nebula Drift</h1>
+        <p class="subtitle">no wifi? still drift.</p>
+        <button id="play-btn" class="btn" type="button">Start</button>
+        <p class="play-hint">Space / click / hold</p>
+      </div>
+      <div id="gameover-screen" hidden>
+        <h1>Game Over</h1>
+        <p class="subtitle">hit something</p>
+        <div id="final-score">0</div>
+        <div id="best-score">HI 0</div>
+        <div id="run-stats"></div>
+        <div class="btn-row">
+          <button id="retry-btn" class="btn" type="button">Retry</button>
+          <button id="share-btn" class="btn secondary" type="button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/** Tunables for Classic Drift */
+export const CONFIG = {
+  HS_KEY: "nebula-drift-highscore",
+  MUTE_KEY: "nebula-drift-muted",
+  STATS_KEY: "nebula-drift-stats",
+  ACH_KEY: "nebula-drift-achs",
+  SKIN_KEY: "nebula-drift-skin",
+
+  GRAVITY: 980,
+  THRUST: 1680,
+  MAX_FALL: 620,
+  MAX_RISE: -520,
+  DRAG: 0.995,
+  SHIP_X_RATIO: 0.22,
+  SHIP_HIT_RADIUS: 9,
+
+  BASE_SCROLL: 160,
+  MAX_SCROLL: 440,
+  BASE_SPAWN: 1.35,
+  MIN_SPAWN: 0.45,
+  ORB_CHANCE: 0.5,
+  POWERUP_CHANCE: 0.15,
+  HAZARD_CHANCE: 0.22,
+  BOSS_CHANCE: 0.08,
+  RAINBOW_CHANCE: 0.06,
+  ORB_POINTS: 25,
+  RAINBOW_POINTS: 120,
+  MAX_MULTIPLIER: 12,
+  STREAK_STEP: 5,
+  FEVER_MULT: 5,
+
+  NEAR_MISS_DIST: 28,
+  NEAR_MISS_POINTS: 5,
+
+  SLOW_DURATION: 4.5,
+  MAGNET_DURATION: 5.5,
+  FEVER_DURATION: 8,
+  SLOW_FACTOR: 0.55,
+  MAGNET_RANGE: 120,
+
+  CLOUD_COUNT: 6,
+  GROUND_SEGMENTS: 24,
+  HILL_COUNT: 5,;
+
+/** Flat 2D palette — colorful but not neon-glow */
+export const COLORS = {
+  bg: "#eaf6ff",
+  ink: "#3d3d3d",
+  inkSoft: "#7a8a99",
+  ground: "#5a8f3c",
+  groundDirt: "#8b6914",
+  ship: "#3d3d3d",
+  beak: "#f0a020",
+  cactus: "#3d8b4a",
+  cactusDark: "#2f6b38",
+  rock: "#8a7355",
+  rockDark: "#6a5640",
+  bird: "#c45c26",
+  coin: "#e6b422",
+  shield: "#4a9eff",
+  slow: "#9b59d0",
+  magnet: "#e74c6f",
+  wind: "#4a9eff",
+  boost: "#e74c6f",
+  fever: "#ff6b4a",
+  rainbow: ["#e74c6f", "#e6b422", "#3d8b4a", "#4a9eff", "#9b59d0"],
+  popup: "#3d3d3d",
+  sun: "#ffd76a",
+  moon: "#f2f2e8",
+  star: "#ffffff",
+  hill: "#9ec9a0",
+  hillDark: "#7aaa7c",
+};
+
+export const THEMES = [
+  {
+    min: 0,
+    name: "day",
+    bg: "#eaf6ff",
+    skyTop: "#b8e0ff",
+    ink: "#3d3d3d",
+    inkSoft: "#7a8a99",
+    ground: "#5a8f3c",
+    groundDirt: "#8b6914",
+    cloud: "#ffffff",
+    showSun: true,
+    showMoon: false,
+    stars: false,
+  },
+  {
+    min: 800,
+    name: "dusk",
+    bg: "#ffd6a8",
+    skyTop: "#ff9e7a",
+    ink: "#3d2c2c",
+    inkSoft: "#8a6060",
+    ground: "#6a7a3a",
+    groundDirt: "#7a5520",
+    cloud: "#ffe0c0",
+    showSun: true,
+    showMoon: false,
+    stars: false,
+  },
+  {
+    min: 2000,
+    name: "night",
+    bg: "#1a2238",
+    skyTop: "#0d1428",
+    ink: "#d8dde8",
+    inkSoft: "#8a93a8",
+    ground: "#2f4a28",
+    groundDirt: "#3d3020",
+    cloud: "#3a4560",
+    showSun: false,
+    showMoon: true,
+    stars: true,
+  },
+  {
+    min: 4000,
+    name: "nebula",
+    bg: "#1a1030",
+    skyTop: "#2a1850",
+    ink: "#e8d8ff",
+    inkSoft: "#a090c0",
+    ground: "#3a2860",
+    groundDirt: "#4a2060",
+    cloud: "#5a3080",
+    showSun: false,
+    showMoon: true,
+    stars: true,
+  },
+];
+
+export function themeForScore(score) {
+  let t = THEMES[0];
+  for (const theme of THEMES) {
+    if (score >= theme.min) t = theme;
+  }
+  return t;
+}
