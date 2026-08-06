@@ -4,11 +4,15 @@ basically a one button browser arcade game. hold to thrust, release to drift, do
 
 pretty simple overall. single page, canvas, vanilla js. no build tools no npm.
 
+<img width="1890" height="874" alt="image" src="https://github.com/user-attachments/assets/5b6cc278-bf5c-4b5c-a506-30c170b4d9c9" />
+<img width="1916" height="851" alt="image" src="https://github.com/user-attachments/assets/2465939b-8383-4faf-966b-9bab1e44deba" />
+
 ## How to set it up (localhost:3000)
 
 you cant just open index.html as a file and expect the modules to work. browsers block that. so you spin up a tiny local server on port 3000.
 
 from this folder in powershell:
+
 
 ```
 powershell -ExecutionPolicy Bypass -File .\serve.ps1 3000
